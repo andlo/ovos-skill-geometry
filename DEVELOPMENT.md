@@ -62,6 +62,54 @@ RECITATION never has actual numbers to substitute (only formula
 APPLICATION, the 8 per-shape intents, computes real numbers and uses
 `format_number()`).
 
+## Common Query as a safety net, not a replacement
+
+**Revised finding, from live testing on real hardware, not just
+reading code:** the original claim in this file ("fixed intents run
+before Common Query and always win deterministically") turned out to
+be incomplete. It's only true for utterances that clear
+`ovos-padatious-pipeline-plugin-high`'s confidence threshold (0.95 by
+default) - anything below that falls through to whatever pipeline
+stage is configured NEXT on that specific instance, which is
+per-instance config a skill can't ship or control. On live testing,
+`ovos-m2v-pipeline-high` (a semantic classifier that recognizes
+question-shaped utterances and routes them to Common Query) sits
+between `padatious-high` and `padatious-medium` in a stock-ish
+pipeline config, and confidently intercepted "what is a rhombus"
+before our own medium-confidence Padatious match ever ran - Common
+Query then answered with an unrelated Wikipedia result.
+
+Reordering the LOCAL pipeline config fixes it for that one machine,
+but doesn't help anyone installing this skill elsewhere with
+whatever pipeline ordering THEIR instance has. The portable fix is to
+also register as a Common Query participant
+(`@common_query`-decorated `handle_common_query()`), so that
+regardless of which pipeline stage an utterance ends up routed
+through, this package still gets a chance to give the correct,
+on-topic answer instead of losing entirely to a generic web-search
+skill.
+
+**Deliberately narrow scope**, not a parallel implementation of every
+intent: `handle_common_query()` only covers the single-entity
+glossary lookup ("what is a rhombus" -> `resolve_term()`) and the
+Pythagoras theorem statement. It does NOT attempt to replicate the
+numeric formula-application intents (`area_of_rectangle`, etc) -
+their phrasing (explicit numbers, "with length X and width Y") is
+distinctive enough that a generic semantic router is unlikely to
+misclassify them as trivia questions the way a bare "what is X" gets
+misclassified, so the risk this safety net addresses doesn't really
+apply there.
+
+`_strip_question_prefix()` is deliberately simple substring matching
+against a small per-language prefix list (reusing the same trigger
+phrasings already used in `what_is.intent`), not full NLU - this is a
+safety net for cases the platform's own routing failed to hand us
+properly, not a second implementation of intent parsing. Confidence
+is a flat 0.8 for any resolved match (no partial-credit scoring) -
+our data is authoritative for its own domain once we've positively
+identified the term, there's no "maybe" case worth expressing as a
+lower confidence.
+
 ## Setup
 ```bash
 git clone https://github.com/andlo/ovos-skill-geometry.git

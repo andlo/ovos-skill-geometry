@@ -43,7 +43,7 @@ from pathlib import Path
 
 from ovos_number_parser import extract_number
 from ovos_workshop.skills import OVOSSkill
-from ovos_workshop.decorators import intent_handler
+from ovos_workshop.decorators import intent_handler, common_query
 
 SKILL_ROOT = Path(__file__).resolve().parent
 DATA_DIR = SKILL_ROOT / "data"
@@ -225,10 +225,74 @@ def format_number(value):
     return rounded
 
 
+# ---------------------------------------------------------------
+# Common Query safety net - see DEVELOPMENT.md "Common Query as a
+# safety net, not a replacement". Deliberately narrow: only the
+# single-entity glossary lookup ("what is a rhombus") and the
+# Pythagoras theorem statement ("what is pythagoras' theorem") -
+# NOT the numeric formula-application intents, whose phrasing
+# (explicit numbers, "with length X and width Y") is distinctive
+# enough that platform-level semantic routers are unlikely to
+# misclassify them as generic trivia questions the way a bare
+# "what is X" gets misclassified.
+# ---------------------------------------------------------------
+QUESTION_PREFIXES = {
+    "en-us": ["what is a ", "what is an ", "what is the ", "what is ",
+              "what's a ", "what's an ", "what's the ", "what's "],
+    "da-dk": ["hvad er en ", "hvad er et ", "hvad er "],
+    "de-de": ["was ist ein ", "was ist eine ", "was ist der ", "was ist die ",
+              "was ist das ", "was ist "],
+    "fr-fr": ["qu'est-ce qu'un ", "qu'est-ce qu'une ", "qu'est-ce que ", "qu'est-ce qu' "],
+    "es-es": ["qué es un ", "qué es una ", "qué es "],
+}
+PYTHAGORAS_WORDS = {
+    "en-us": "pythagoras", "da-dk": "pythagoras", "de-de": "pythagoras",
+    "fr-fr": "pythagore", "es-es": "pitágoras",
+}
+
+
+def _strip_question_prefix(phrase, lang):
+    """Returns the subject after a recognized 'what is X' style
+    prefix, or None if the phrase doesn't start with one of ours -
+    deliberately simple substring matching, not full NLU, since this
+    is a narrow safety net, not a replacement for the real intents."""
+    lang = lang.lower()
+    stripped = phrase.strip()
+    lower = stripped.lower()
+    for prefix in QUESTION_PREFIXES.get(lang, []):
+        if lower.startswith(prefix):
+            return stripped[len(prefix):].strip().rstrip("?").strip()
+    return None
+
+
 class Geometry(OVOSSkill):
     """Thin wrappers around the module-level glossary lookups and
     formula functions above - each handler resolves slots, computes
     or looks up the answer, and speaks a dialog."""
+
+    @common_query()
+    def handle_common_query(self, phrase, lang):
+        """Safety net for when the platform's own routing (e.g. a
+        semantic classifier like ovos-m2v-pipeline-high) sends a
+        well-formed question to Common Query BEFORE our own
+        Padatious intents get a chance to match - discovered via live
+        testing, not assumed: pipeline order/confidence tuning is
+        per-instance config a skill can't ship or control, so a
+        skill can't rely on its own intents always being tried first
+        on every installation. See DEVELOPMENT.md."""
+        subject = _strip_question_prefix(phrase, lang)
+        if not subject:
+            return None
+        if PYTHAGORAS_WORDS.get(lang.lower(), "pythagoras") in subject.lower():
+            formula = formula_words("pythagorean", lang)
+            if formula:
+                return formula, 0.8
+        key = resolve_term(subject, lang)
+        if key:
+            definition = term_definition(key, lang)
+            if definition:
+                return definition, 0.8
+        return None
 
     def _parse_or_complain(self, raw):
         """Returns a float, or speaks 'number_not_understood' and
