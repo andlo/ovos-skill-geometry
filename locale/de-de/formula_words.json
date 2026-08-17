@@ -2,12 +2,12 @@
   "_notes": [
     "formula key -> the formula spoken in words."
   ],
-  "circle_area": "die Fläche eines Kreises ist Pi mal dem Radius zum Quadrat",
-  "circle_circumference": "der Umfang eines Kreises ist zwei mal Pi mal dem Radius",
+  "circle_area": "Pi mal dem Radius zum Quadrat",
+  "circle_circumference": "zwei mal Pi mal dem Radius",
   "pythagorean": "in einem rechtwinkligen Dreieck ist das Quadrat der Hypotenuse gleich der Summe der Quadrate der beiden anderen Seiten",
-  "rectangle_area": "die Fläche eines Rechtecks ist die Länge mal die Breite",
-  "rectangle_perimeter": "der Umfang eines Rechtecks ist zwei mal die Summe aus Länge und Breite",
-  "square_area": "die Fläche eines Quadrats ist die Seite mal sich selbst",
-  "square_perimeter": "der Umfang eines Quadrats ist vier mal die Seite",
-  "triangle_area": "die Fläche eines Dreiecks ist die Hälfte der Grundseite mal der Höhe"
+  "rectangle_area": "die Länge mal die Breite",
+  "rectangle_perimeter": "zwei mal die Summe aus Länge und Breite",
+  "square_area": "die Seite mal sich selbst",
+  "square_perimeter": "vier mal die Seite",
+  "triangle_area": "die Hälfte der Grundseite mal der Höhe"
 }

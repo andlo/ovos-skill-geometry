@@ -2,12 +2,12 @@
   "_notes": [
     "formula key -> the formula spoken in words."
   ],
-  "circle_area": "arealet af en cirkel er pi gange radius i anden",
-  "circle_circumference": "omkredsen af en cirkel er to gange pi gange radius",
+  "circle_area": "pi gange radius i anden",
+  "circle_circumference": "to gange pi gange radius",
   "pythagorean": "i en retvinklet trekant er hypotenusen i anden lig med summen af de to andre siders anden",
-  "rectangle_area": "arealet af et rektangel er længden gange bredden",
-  "rectangle_perimeter": "omkredsen af et rektangel er to gange summen af længden og bredden",
-  "square_area": "arealet af et kvadrat er siden gange sig selv",
-  "square_perimeter": "omkredsen af et kvadrat er fire gange siden",
-  "triangle_area": "arealet af en trekant er det halve af grundlinjen gange højden"
+  "rectangle_area": "længden gange bredden",
+  "rectangle_perimeter": "to gange summen af længden og bredden",
+  "square_area": "siden gange sig selv",
+  "square_perimeter": "fire gange siden",
+  "triangle_area": "det halve af grundlinjen gange højden"
 }

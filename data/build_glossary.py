@@ -213,56 +213,63 @@ DEFINITIONS["es-es"] = {
 # ---------------------------------------------------------------
 # Formula-in-words sentences, per locale - used by formula_of.intent
 # ("what is the formula for the area of a rectangle") and by teach
-# mode in ovos-skill-geometry-practice.
+# mode in ovos-skill-geometry-practice. IMPORTANT: these are the
+# RIGHT-HAND SIDE only ("length times width"), NOT a full sentence -
+# the dialog templates that use these ("the {property} of a {shape}
+# is {formula}") already supply the "the X of a Y is" prefix. Storing
+# a full sentence here caused a real, published (v0.0.1) bug: "the
+# area of a circle is the area of a circle is pi times the radius
+# squared" - fixed here, not caught by the original tests since they
+# only checked `"pi" in data["formula"]`, not the full rendered text.
 FORMULA_WORDS = {
     "en-us": {
-        "rectangle_area": "the area of a rectangle is length times width",
-        "rectangle_perimeter": "the perimeter of a rectangle is two times the sum of the length and the width",
-        "square_area": "the area of a square is the side times itself",
-        "square_perimeter": "the perimeter of a square is four times the side",
-        "triangle_area": "the area of a triangle is half of the base times the height",
-        "circle_area": "the area of a circle is pi times the radius squared",
-        "circle_circumference": "the circumference of a circle is two times pi times the radius",
+        "rectangle_area": "length times width",
+        "rectangle_perimeter": "two times the sum of the length and the width",
+        "square_area": "the side times itself",
+        "square_perimeter": "four times the side",
+        "triangle_area": "half of the base times the height",
+        "circle_area": "pi times the radius squared",
+        "circle_circumference": "two times pi times the radius",
         "pythagorean": "in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides",
     },
     "da-dk": {
-        "rectangle_area": "arealet af et rektangel er længden gange bredden",
-        "rectangle_perimeter": "omkredsen af et rektangel er to gange summen af længden og bredden",
-        "square_area": "arealet af et kvadrat er siden gange sig selv",
-        "square_perimeter": "omkredsen af et kvadrat er fire gange siden",
-        "triangle_area": "arealet af en trekant er det halve af grundlinjen gange højden",
-        "circle_area": "arealet af en cirkel er pi gange radius i anden",
-        "circle_circumference": "omkredsen af en cirkel er to gange pi gange radius",
+        "rectangle_area": "længden gange bredden",
+        "rectangle_perimeter": "to gange summen af længden og bredden",
+        "square_area": "siden gange sig selv",
+        "square_perimeter": "fire gange siden",
+        "triangle_area": "det halve af grundlinjen gange højden",
+        "circle_area": "pi gange radius i anden",
+        "circle_circumference": "to gange pi gange radius",
         "pythagorean": "i en retvinklet trekant er hypotenusen i anden lig med summen af de to andre siders anden",
     },
     "de-de": {
-        "rectangle_area": "die Fläche eines Rechtecks ist die Länge mal die Breite",
-        "rectangle_perimeter": "der Umfang eines Rechtecks ist zwei mal die Summe aus Länge und Breite",
-        "square_area": "die Fläche eines Quadrats ist die Seite mal sich selbst",
-        "square_perimeter": "der Umfang eines Quadrats ist vier mal die Seite",
-        "triangle_area": "die Fläche eines Dreiecks ist die Hälfte der Grundseite mal der Höhe",
-        "circle_area": "die Fläche eines Kreises ist Pi mal dem Radius zum Quadrat",
-        "circle_circumference": "der Umfang eines Kreises ist zwei mal Pi mal dem Radius",
+        "rectangle_area": "die Länge mal die Breite",
+        "rectangle_perimeter": "zwei mal die Summe aus Länge und Breite",
+        "square_area": "die Seite mal sich selbst",
+        "square_perimeter": "vier mal die Seite",
+        "triangle_area": "die Hälfte der Grundseite mal der Höhe",
+        "circle_area": "Pi mal dem Radius zum Quadrat",
+        "circle_circumference": "zwei mal Pi mal dem Radius",
         "pythagorean": "in einem rechtwinkligen Dreieck ist das Quadrat der Hypotenuse gleich der Summe der Quadrate der beiden anderen Seiten",
     },
     "fr-fr": {
-        "rectangle_area": "l'aire d'un rectangle est la longueur multipliée par la largeur",
-        "rectangle_perimeter": "le périmètre d'un rectangle est deux fois la somme de la longueur et de la largeur",
-        "square_area": "l'aire d'un carré est le côté multiplié par lui-même",
-        "square_perimeter": "le périmètre d'un carré est quatre fois le côté",
-        "triangle_area": "l'aire d'un triangle est la moitié de la base multipliée par la hauteur",
-        "circle_area": "l'aire d'un cercle est pi multiplié par le rayon au carré",
-        "circle_circumference": "la circonférence d'un cercle est deux fois pi multiplié par le rayon",
+        "rectangle_area": "la longueur multipliée par la largeur",
+        "rectangle_perimeter": "deux fois la somme de la longueur et de la largeur",
+        "square_area": "le côté multiplié par lui-même",
+        "square_perimeter": "quatre fois le côté",
+        "triangle_area": "la moitié de la base multipliée par la hauteur",
+        "circle_area": "pi multiplié par le rayon au carré",
+        "circle_circumference": "deux fois pi multiplié par le rayon",
         "pythagorean": "dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés",
     },
     "es-es": {
-        "rectangle_area": "el área de un rectángulo es el largo por el ancho",
-        "rectangle_perimeter": "el perímetro de un rectángulo es dos veces la suma del largo y el ancho",
-        "square_area": "el área de un cuadrado es el lado por sí mismo",
-        "square_perimeter": "el perímetro de un cuadrado es cuatro veces el lado",
-        "triangle_area": "el área de un triángulo es la mitad de la base por la altura",
-        "circle_area": "el área de un círculo es pi por el radio al cuadrado",
-        "circle_circumference": "la circunferencia de un círculo es dos veces pi por el radio",
+        "rectangle_area": "el largo por el ancho",
+        "rectangle_perimeter": "dos veces la suma del largo y el ancho",
+        "square_area": "el lado por sí mismo",
+        "square_perimeter": "cuatro veces el lado",
+        "triangle_area": "la mitad de la base por la altura",
+        "circle_area": "pi por el radio al cuadrado",
+        "circle_circumference": "dos veces pi por el radio",
         "pythagorean": "en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los otros dos lados",
     },
 }

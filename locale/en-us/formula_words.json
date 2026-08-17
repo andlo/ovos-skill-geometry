@@ -2,12 +2,12 @@
   "_notes": [
     "formula key -> the formula spoken in words."
   ],
-  "circle_area": "the area of a circle is pi times the radius squared",
-  "circle_circumference": "the circumference of a circle is two times pi times the radius",
+  "circle_area": "pi times the radius squared",
+  "circle_circumference": "two times pi times the radius",
   "pythagorean": "in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides",
-  "rectangle_area": "the area of a rectangle is length times width",
-  "rectangle_perimeter": "the perimeter of a rectangle is two times the sum of the length and the width",
-  "square_area": "the area of a square is the side times itself",
-  "square_perimeter": "the perimeter of a square is four times the side",
-  "triangle_area": "the area of a triangle is half of the base times the height"
+  "rectangle_area": "length times width",
+  "rectangle_perimeter": "two times the sum of the length and the width",
+  "square_area": "the side times itself",
+  "square_perimeter": "four times the side",
+  "triangle_area": "half of the base times the height"
 }
