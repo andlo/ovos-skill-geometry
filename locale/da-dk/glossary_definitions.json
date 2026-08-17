@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> one-sentence definition, hand-authored (no external dataset for this skill, unlike ovos-skill-geography's country data). da-dk/de-de use the SAME word for 'perimeter' and 'circumference' ('omkreds'/'Umfang') - a real, documented linguistic fact, not a bug; see DEVELOPMENT.md."
+  ],
+  "angle": "rummet mellem to linjer der mødes i et punkt, målt i grader",
+  "area": "hvor meget plads der er inde i en todimensionel figur",
+  "circle": "en rund figur hvor hvert punkt på kanten har samme afstand til centrum",
+  "circumference": "afstanden rundt om en cirkel",
+  "cone": "en tredimensionel figur med en rund bund der smalner til et enkelt punkt",
+  "cube": "en tredimensionel figur med seks lige store kvadratiske sider",
+  "cylinder": "en tredimensionel figur med to parallelle runde ender forbundet af en buet overflade",
+  "diagonal": "en lige linje der forbinder to hjørner i en figur, som ikke ligger ved siden af hinanden",
+  "diameter": "afstanden tværs over en cirkel gennem dens centrum, det dobbelte af radius",
+  "hexagon": "en figur med seks lige sider",
+  "hypotenuse": "den længste side i en retvinklet trekant, modsat den rette vinkel",
+  "pentagon": "en figur med fem lige sider",
+  "perimeter": "den samlede afstand rundt om en figur",
+  "pyramid": "en tredimensionel figur med en flersidet bund og trekantede sider der mødes i et punkt",
+  "radius": "afstanden fra midten af en cirkel til dens kant",
+  "rectangle": "en figur med fire rette vinkler og modstående sider af samme længde",
+  "rectangular_prism": "en tredimensionel figur med seks rektangulære sider, som en kasse",
+  "rhombus": "en figur med fire lige lange sider, hvor modstående vinkler er ens, som et skævt kvadrat",
+  "right_triangle": "en trekant med en vinkel på halvfems grader",
+  "sphere": "en helt rund tredimensionel figur, som en bold",
+  "square": "en figur med fire lige lange sider og fire rette vinkler",
+  "triangle": "en figur med tre lige sider og tre vinkler",
+  "vertex": "det punkt hvor to eller flere kanter af en figur mødes",
+  "volume": "hvor meget plads der er inde i en tredimensionel figur"
+}

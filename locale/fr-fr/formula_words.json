@@ -1,0 +1,13 @@
+{
+  "_notes": [
+    "formula key -> the formula spoken in words."
+  ],
+  "circle_area": "l'aire d'un cercle est pi multiplié par le rayon au carré",
+  "circle_circumference": "la circonférence d'un cercle est deux fois pi multiplié par le rayon",
+  "pythagorean": "dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés",
+  "rectangle_area": "l'aire d'un rectangle est la longueur multipliée par la largeur",
+  "rectangle_perimeter": "le périmètre d'un rectangle est deux fois la somme de la longueur et de la largeur",
+  "square_area": "l'aire d'un carré est le côté multiplié par lui-même",
+  "square_perimeter": "le périmètre d'un carré est quatre fois le côté",
+  "triangle_area": "l'aire d'un triangle est la moitié de la base multipliée par la hauteur"
+}

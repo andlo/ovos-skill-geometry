@@ -1,0 +1,24 @@
+{
+  "skill_id": "ovos-skill-geometry.andlo",
+  "source": "https://github.com/andlo/ovos-skill-geometry",
+  "package_name": "ovos-skill-geometry",
+  "pip_spec": "ovos-skill-geometry",
+  "license": "GPL-3.0-or-later",
+  "author": "andlo",
+  "name": "Geometri",
+  "description": "Geometrisk viden - definitioner af former og begreber, formler, og udregninger for rektangler, kvadrater, trekanter, cirkler og pythagoras' sætning. Fuldstændig offline.",
+  "examples": [
+    "hvad er en rombe",
+    "hvad er formlen for arealet af en cirkel",
+    "hvad er arealet af et rektangel med længden 5 og bredden 3",
+    "hvad er hypotenusen i en retvinklet trekant med kateterne 3 og 4",
+    "hvad er pythagoras' sætning"
+  ],
+  "tags": [
+    "geometri",
+    "opslag",
+    "matematik",
+    "former"
+  ],
+  "icon": "https://raw.githubusercontent.com/andlo/ovos-skill-geometry/main/icon.png"
+}

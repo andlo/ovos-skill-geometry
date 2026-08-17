@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> one-sentence definition, hand-authored (no external dataset for this skill, unlike ovos-skill-geography's country data). da-dk/de-de use the SAME word for 'perimeter' and 'circumference' ('omkreds'/'Umfang') - a real, documented linguistic fact, not a bug; see DEVELOPMENT.md."
+  ],
+  "angle": "der Raum zwischen zwei Linien, die sich an einem Punkt treffen, gemessen in Grad",
+  "area": "die Menge an Platz innerhalb einer zweidimensionalen Form",
+  "circle": "eine runde Form, bei der jeder Punkt am Rand den gleichen Abstand zum Mittelpunkt hat",
+  "circumference": "der Abstand um einen Kreis herum",
+  "cone": "eine dreidimensionale Form mit einer runden Grundfläche, die sich zu einem einzelnen Punkt verjüngt",
+  "cube": "eine dreidimensionale Form mit sechs gleich großen quadratischen Flächen",
+  "cylinder": "eine dreidimensionale Form mit zwei parallelen runden Enden, verbunden durch eine gekrümmte Oberfläche",
+  "diagonal": "eine gerade Linie, die zwei nicht benachbarte Ecken einer Form verbindet",
+  "diameter": "der Abstand quer durch einen Kreis durch seinen Mittelpunkt, doppelt so groß wie der Radius",
+  "hexagon": "eine Form mit sechs geraden Seiten",
+  "hypotenuse": "die längste Seite eines rechtwinkligen Dreiecks, gegenüber dem rechten Winkel",
+  "pentagon": "eine Form mit fünf geraden Seiten",
+  "perimeter": "die gesamte Strecke um eine Form herum",
+  "pyramid": "eine dreidimensionale Form mit einer vieleckigen Grundfläche und dreieckigen Seiten, die sich in einem Punkt treffen",
+  "radius": "der Abstand vom Mittelpunkt eines Kreises bis zu seinem Rand",
+  "rectangle": "eine Form mit vier rechten Winkeln und gegenüberliegenden Seiten gleicher Länge",
+  "rectangular_prism": "eine dreidimensionale Form mit sechs rechteckigen Flächen, wie eine Kiste",
+  "rhombus": "eine Form mit vier gleich langen Seiten, bei der gegenüberliegende Winkel gleich sind, wie ein schiefes Quadrat",
+  "right_triangle": "ein Dreieck mit einem neunzig Grad Winkel",
+  "sphere": "eine perfekt runde dreidimensionale Form, wie ein Ball",
+  "square": "eine Form mit vier gleich langen Seiten und vier rechten Winkeln",
+  "triangle": "eine Form mit drei geraden Seiten und drei Winkeln",
+  "vertex": "der Punkt, an dem zwei oder mehr Kanten einer Form zusammentreffen",
+  "volume": "die Menge an Platz innerhalb einer dreidimensionalen Form"
+}

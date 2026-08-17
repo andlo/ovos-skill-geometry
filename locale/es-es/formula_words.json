@@ -1,0 +1,13 @@
+{
+  "_notes": [
+    "formula key -> the formula spoken in words."
+  ],
+  "circle_area": "el área de un círculo es pi por el radio al cuadrado",
+  "circle_circumference": "la circunferencia de un círculo es dos veces pi por el radio",
+  "pythagorean": "en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los otros dos lados",
+  "rectangle_area": "el área de un rectángulo es el largo por el ancho",
+  "rectangle_perimeter": "el perímetro de un rectángulo es dos veces la suma del largo y el ancho",
+  "square_area": "el área de un cuadrado es el lado por sí mismo",
+  "square_perimeter": "el perímetro de un cuadrado es cuatro veces el lado",
+  "triangle_area": "el área de un triángulo es la mitad de la base por la altura"
+}

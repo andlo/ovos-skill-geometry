@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> one-sentence definition, hand-authored (no external dataset for this skill, unlike ovos-skill-geography's country data). da-dk/de-de use the SAME word for 'perimeter' and 'circumference' ('omkreds'/'Umfang') - a real, documented linguistic fact, not a bug; see DEVELOPMENT.md."
+  ],
+  "angle": "the space between two lines that meet at a point, measured in degrees",
+  "area": "the amount of space inside a two dimensional shape",
+  "circle": "a round shape where every point on the edge is the same distance from the center",
+  "circumference": "the distance around the outside of a circle",
+  "cone": "a three dimensional shape with a circular base that narrows to a single point",
+  "cube": "a three dimensional shape with six equal square faces",
+  "cylinder": "a three dimensional shape with two parallel circular ends connected by a curved surface",
+  "diagonal": "a straight line connecting two non-adjacent corners of a shape",
+  "diameter": "the distance across a circle through its center, twice the radius",
+  "hexagon": "a shape with six straight sides",
+  "hypotenuse": "the longest side of a right triangle, opposite the right angle",
+  "pentagon": "a shape with five straight sides",
+  "perimeter": "the total distance around the outside of a shape",
+  "pyramid": "a three dimensional shape with a polygon base and triangular sides that meet at a point",
+  "radius": "the distance from the center of a circle to its edge",
+  "rectangle": "a shape with four right angles and opposite sides of equal length",
+  "rectangular_prism": "a three dimensional shape with six rectangular faces, like a box",
+  "rhombus": "a shape with four equal sides where opposite angles are equal, like a tilted square",
+  "right_triangle": "a triangle with one ninety degree angle",
+  "sphere": "a perfectly round three dimensional shape, like a ball",
+  "square": "a shape with four equal sides and four right angles",
+  "triangle": "a shape with three straight sides and three angles",
+  "vertex": "the point where two or more edges of a shape meet",
+  "volume": "the amount of space inside a three dimensional shape"
+}

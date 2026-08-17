@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> one-sentence definition, hand-authored (no external dataset for this skill, unlike ovos-skill-geography's country data). da-dk/de-de use the SAME word for 'perimeter' and 'circumference' ('omkreds'/'Umfang') - a real, documented linguistic fact, not a bug; see DEVELOPMENT.md."
+  ],
+  "angle": "l'espace entre deux lignes qui se rencontrent en un point, mesuré en degrés",
+  "area": "la quantité d'espace à l'intérieur d'une forme à deux dimensions",
+  "circle": "une forme ronde où chaque point du bord est à la même distance du centre",
+  "circumference": "la distance autour d'un cercle",
+  "cone": "une forme à trois dimensions avec une base circulaire qui se rétrécit jusqu'à un seul point",
+  "cube": "une forme à trois dimensions avec six faces carrées égales",
+  "cylinder": "une forme à trois dimensions avec deux extrémités circulaires parallèles reliées par une surface courbe",
+  "diagonal": "une ligne droite reliant deux coins non adjacents d'une forme",
+  "diameter": "la distance à travers un cercle en passant par son centre, le double du rayon",
+  "hexagon": "une forme à six côtés droits",
+  "hypotenuse": "le côté le plus long d'un triangle rectangle, opposé à l'angle droit",
+  "pentagon": "une forme à cinq côtés droits",
+  "perimeter": "la distance totale autour d'une forme",
+  "pyramid": "une forme à trois dimensions avec une base polygonale et des côtés triangulaires qui se rencontrent en un point",
+  "radius": "la distance entre le centre d'un cercle et son bord",
+  "rectangle": "une forme à quatre angles droits et des côtés opposés de même longueur",
+  "rectangular_prism": "une forme à trois dimensions avec six faces rectangulaires, comme une boîte",
+  "rhombus": "une forme à quatre côtés égaux où les angles opposés sont égaux, comme un carré incliné",
+  "right_triangle": "un triangle avec un angle de quatre-vingt-dix degrés",
+  "sphere": "une forme à trois dimensions parfaitement ronde, comme une balle",
+  "square": "une forme à quatre côtés égaux et quatre angles droits",
+  "triangle": "une forme à trois côtés droits et trois angles",
+  "vertex": "le point où deux arêtes ou plus d'une forme se rencontrent",
+  "volume": "la quantité d'espace à l'intérieur d'une forme à trois dimensions"
+}

@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> the term's spoken name in this language."
+  ],
+  "angle": "ángulo",
+  "area": "área",
+  "circle": "círculo",
+  "circumference": "circunferencia",
+  "cone": "cono",
+  "cube": "cubo",
+  "cylinder": "cilindro",
+  "diagonal": "diagonal",
+  "diameter": "diámetro",
+  "hexagon": "hexágono",
+  "hypotenuse": "hipotenusa",
+  "pentagon": "pentágono",
+  "perimeter": "perímetro",
+  "pyramid": "pirámide",
+  "radius": "radio",
+  "rectangle": "rectángulo",
+  "rectangular_prism": "prisma rectangular",
+  "rhombus": "rombo",
+  "right_triangle": "triángulo rectángulo",
+  "sphere": "esfera",
+  "square": "cuadrado",
+  "triangle": "triángulo",
+  "vertex": "vértice",
+  "volume": "volumen"
+}

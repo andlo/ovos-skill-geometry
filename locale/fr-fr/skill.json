@@ -1,0 +1,24 @@
+{
+  "skill_id": "ovos-skill-geometry.andlo",
+  "source": "https://github.com/andlo/ovos-skill-geometry",
+  "package_name": "ovos-skill-geometry",
+  "pip_spec": "ovos-skill-geometry",
+  "license": "GPL-3.0-or-later",
+  "author": "andlo",
+  "name": "Géométrie",
+  "description": "Connaissances en géométrie - définitions des formes et termes, formules et calculs pour rectangles, carrés, triangles, cercles et le théorème de Pythagore. Entièrement hors ligne.",
+  "examples": [
+    "qu'est-ce qu'un losange",
+    "quelle est la formule pour l'aire d'un cercle",
+    "quelle est l'aire d'un rectangle de longueur 5 et de largeur 3",
+    "quelle est l'hypoténuse d'un triangle rectangle avec des côtés 3 et 4",
+    "quel est le théorème de pythagore"
+  ],
+  "tags": [
+    "géométrie",
+    "référence",
+    "mathématiques",
+    "formes"
+  ],
+  "icon": "https://raw.githubusercontent.com/andlo/ovos-skill-geometry/main/icon.png"
+}

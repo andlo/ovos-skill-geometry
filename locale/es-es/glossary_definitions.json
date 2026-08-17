@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> one-sentence definition, hand-authored (no external dataset for this skill, unlike ovos-skill-geography's country data). da-dk/de-de use the SAME word for 'perimeter' and 'circumference' ('omkreds'/'Umfang') - a real, documented linguistic fact, not a bug; see DEVELOPMENT.md."
+  ],
+  "angle": "el espacio entre dos líneas que se encuentran en un punto, medido en grados",
+  "area": "la cantidad de espacio dentro de una figura bidimensional",
+  "circle": "una figura redonda donde cada punto del borde está a la misma distancia del centro",
+  "circumference": "la distancia alrededor de un círculo",
+  "cone": "una figura tridimensional con una base circular que se estrecha hasta un solo punto",
+  "cube": "una figura tridimensional con seis caras cuadradas iguales",
+  "cylinder": "una figura tridimensional con dos extremos circulares paralelos conectados por una superficie curva",
+  "diagonal": "una línea recta que conecta dos esquinas no adyacentes de una figura",
+  "diameter": "la distancia a través de un círculo pasando por su centro, el doble del radio",
+  "hexagon": "una figura con seis lados rectos",
+  "hypotenuse": "el lado más largo de un triángulo rectángulo, opuesto al ángulo recto",
+  "pentagon": "una figura con cinco lados rectos",
+  "perimeter": "la distancia total alrededor de una figura",
+  "pyramid": "una figura tridimensional con una base poligonal y lados triangulares que se encuentran en un punto",
+  "radius": "la distancia desde el centro de un círculo hasta su borde",
+  "rectangle": "una figura con cuatro ángulos rectos y lados opuestos de igual longitud",
+  "rectangular_prism": "una figura tridimensional con seis caras rectangulares, como una caja",
+  "rhombus": "una figura con cuatro lados iguales donde los ángulos opuestos son iguales, como un cuadrado inclinado",
+  "right_triangle": "un triángulo con un ángulo de noventa grados",
+  "sphere": "una figura tridimensional perfectamente redonda, como una pelota",
+  "square": "una figura con cuatro lados iguales y cuatro ángulos rectos",
+  "triangle": "una figura con tres lados rectos y tres ángulos",
+  "vertex": "el punto donde se encuentran dos o más aristas de una figura",
+  "volume": "la cantidad de espacio dentro de una figura tridimensional"
+}

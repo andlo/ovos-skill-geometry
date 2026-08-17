@@ -1,0 +1,29 @@
+{
+  "_notes": [
+    "term key -> the term's spoken name in this language."
+  ],
+  "angle": "vinkel",
+  "area": "areal",
+  "circle": "cirkel",
+  "circumference": "omkreds",
+  "cone": "kegle",
+  "cube": "terning",
+  "cylinder": "cylinder",
+  "diagonal": "diagonal",
+  "diameter": "diameter",
+  "hexagon": "sekskant",
+  "hypotenuse": "hypotenuse",
+  "pentagon": "femkant",
+  "perimeter": "omkreds",
+  "pyramid": "pyramide",
+  "radius": "radius",
+  "rectangle": "rektangel",
+  "rectangular_prism": "kasse",
+  "rhombus": "rombe",
+  "right_triangle": "retvinklet trekant",
+  "sphere": "kugle",
+  "square": "kvadrat",
+  "triangle": "trekant",
+  "vertex": "toppunkt",
+  "volume": "rumfang"
+}
