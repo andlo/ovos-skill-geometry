@@ -1,0 +1,12 @@
+{"utterance": "cuál es el área de un círculo con radio 5", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_circle"}
+{"utterance": "cuál es el área de un rectángulo con largo 5 y ancho 4", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_rectangle"}
+{"utterance": "cuál es el área de un cuadrado con lado 5", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_square"}
+{"utterance": "cuál es el área de un triángulo con base 5 y altura 5", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_triangle"}
+{"utterance": "cuál es la circunferencia de un círculo con radio 3", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "circumference_of_circle"}
+{"utterance": "cuál es la fórmula para área de un círculo", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "formula_of"}
+{"utterance": "cuál es la hipotenusa de un triángulo rectángulo con catetos 5 y 4", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "hypotenuse_of_right_triangle"}
+{"utterance": "cuál es el perímetro de un rectángulo con largo 3 y ancho 6", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_rectangle"}
+{"utterance": "cuál es el perímetro de un cuadrado con lado 3", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_square"}
+{"utterance": "cuál es el teorema de pitágoras", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "pythagoras_theorem"}
+{"utterance": "qué es un ángulo", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
+{"utterance": "qué es hipotenusa", "lang": "es-ES", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}

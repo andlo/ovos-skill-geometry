@@ -1,0 +1,12 @@
+{"utterance": "quelle est l'aire d'un cercle de rayon 5", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_circle"}
+{"utterance": "quelle est l'aire d'un rectangle de longueur 5 et de largeur 4", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_rectangle"}
+{"utterance": "quelle est l'aire d'un carré de côté 5", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_square"}
+{"utterance": "quelle est l'aire d'un triangle de base 5 et de hauteur 5", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_triangle"}
+{"utterance": "quelle est la circonférence d'un cercle de rayon 3", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "circumference_of_circle"}
+{"utterance": "quelle est la formule pour aire d'un cercle", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "formula_of"}
+{"utterance": "quelle est l'hypoténuse d'un triangle rectangle avec des côtés 5 et 4", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "hypotenuse_of_right_triangle"}
+{"utterance": "quel est le périmètre d'un rectangle de longueur 3 et de largeur 6", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_rectangle"}
+{"utterance": "quel est le périmètre d'un carré de côté 3", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_square"}
+{"utterance": "quel est le théorème de pythagore", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "pythagoras_theorem"}
+{"utterance": "qu'est-ce qu'un angle", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
+{"utterance": "qu'est-ce que hypoténuse", "lang": "fr-FR", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
