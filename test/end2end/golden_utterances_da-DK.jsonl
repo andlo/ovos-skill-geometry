@@ -1,0 +1,12 @@
+{"utterance": "hvad er arealet af en cirkel med radius 5", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_circle"}
+{"utterance": "hvad er arealet af et rektangel med længden 5 og bredden 4", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_rectangle"}
+{"utterance": "hvad er arealet af et kvadrat med siden 5", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_square"}
+{"utterance": "hvad er arealet af en trekant med grundlinjen 5 og højden 5", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_triangle"}
+{"utterance": "hvad er omkredsen af en cirkel med radius 3", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "circumference_of_circle"}
+{"utterance": "hvad er formlen for areal af en cirkel", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "formula_of"}
+{"utterance": "hvad er hypotenusen i en retvinklet trekant med kateterne 5 og 4", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "hypotenuse_of_right_triangle"}
+{"utterance": "hvad er omkredsen af et rektangel med længden 3 og bredden 6", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_rectangle"}
+{"utterance": "hvad er omkredsen af et kvadrat med siden 3", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_square"}
+{"utterance": "hvad er pythagoras' sætning", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "pythagoras_theorem"}
+{"utterance": "hvad er en vinkel", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
+{"utterance": "hvad er hypotenuse", "lang": "da-DK", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}

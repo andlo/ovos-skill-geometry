@@ -1,0 +1,12 @@
+{"utterance": "was ist die fläche eines kreises mit dem radius 5", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_circle"}
+{"utterance": "was ist die fläche eines rechtecks mit der länge 5 und der breite 4", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_rectangle"}
+{"utterance": "was ist die fläche eines quadrats mit der seite 5", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_square"}
+{"utterance": "was ist die fläche eines dreiecks mit der grundseite 5 und der höhe 5", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "area_of_triangle"}
+{"utterance": "was ist der umfang eines kreises mit dem radius 3", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "circumference_of_circle"}
+{"utterance": "wie lautet die formel für Fläche eines Kreis", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "formula_of"}
+{"utterance": "was ist die hypotenuse eines rechtwinkligen dreiecks mit den katheten 5 und 4", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "hypotenuse_of_right_triangle"}
+{"utterance": "was ist der umfang eines rechtecks mit der länge 3 und der breite 6", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_rectangle"}
+{"utterance": "was ist der umfang eines quadrats mit der seite 3", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "perimeter_of_square"}
+{"utterance": "was ist der satz des pythagoras", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "pythagoras_theorem"}
+{"utterance": "was ist ein Winkel", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
+{"utterance": "was ist Hypotenuse", "lang": "de-DE", "skill_id": "ovos-skill-geometry.andlo", "intent_label": "what_is"}
