@@ -44,6 +44,7 @@ from pathlib import Path
 from ovos_number_parser import extract_number
 from ovos_workshop.skills import OVOSSkill
 from ovos_workshop.decorators import intent_handler, common_query
+from ovos_workshop.intents import IntentBuilder
 
 SKILL_ROOT = Path(__file__).resolve().parent
 DATA_DIR = SKILL_ROOT / "data"
@@ -302,9 +303,13 @@ class Geometry(OVOSSkill):
             self.speak_dialog("number_not_understood")
         return value
 
-    @intent_handler("what_is.intent")
+    @intent_handler(IntentBuilder("what_is").require("WhatIs").require("GeometryTerm"))
     def handle_what_is(self, message):
-        term_raw = message.data.get("term")
+        """An Adapt intent that needs a known geometry term
+        (GeometryTerm.voc, from glossary_names.json by tools/make_vocab.py):
+        as a Padatious template, "what is {term}" took every "what is …"
+        question away from Common Query."""
+        term_raw = message.data.get("GeometryTerm")
         key = resolve_term(term_raw, self.lang)
         if key is None:
             self.speak_dialog("term_not_understood", {"term": term_raw or ""})

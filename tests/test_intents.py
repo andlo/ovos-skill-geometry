@@ -10,7 +10,7 @@ def _msg(**data):
 
 def test_what_is_known_term(skill):
     skill.speak_dialog = MagicMock()
-    skill.handle_what_is(_msg(term="rhombus"))
+    skill.handle_what_is(_msg(GeometryTerm="rhombus"))   # Adapt hands over the vocabulary word
     dialog_name, data = skill.speak_dialog.call_args[0]
     assert dialog_name == "definition"
     assert data["term"] == "rhombus"
@@ -19,7 +19,7 @@ def test_what_is_known_term(skill):
 
 def test_what_is_unknown_term(skill):
     skill.speak_dialog = MagicMock()
-    skill.handle_what_is(_msg(term="Narnia"))
+    skill.handle_what_is(_msg(GeometryTerm="Narnia"))
     skill.speak_dialog.assert_called_once_with("term_not_understood", {"term": "Narnia"})
 
 
@@ -111,3 +111,14 @@ def test_hypotenuse_of_right_triangle_exact_triple(skill):
     skill.handle_hypotenuse_of_right_triangle(_msg(leg_a="3", leg_b="4"))
     skill.speak_dialog.assert_called_once_with(
         "hypotenuse_of_right_triangle", {"leg_a": 3, "leg_b": 4, "hypotenuse": 5})
+
+
+def test_what_is_needs_a_known_term():
+    """"what is" is Adapt with a required GeometryTerm (tools/make_vocab.py):
+    every glossary term is in the vocabulary, and the catch-all template is gone."""
+    from pathlib import Path
+    loc = Path(__file__).resolve().parents[1] / "locale"
+    for lang in ("en-us", "da-dk", "de-de", "es-es", "fr-fr"):
+        assert len((loc / lang / "GeometryTerm.voc").read_text(encoding="utf-8").split()) >= 20, lang
+        assert (loc / lang / "WhatIs.voc").exists(), lang
+        assert not (loc / lang / "what_is.intent").exists(), lang
