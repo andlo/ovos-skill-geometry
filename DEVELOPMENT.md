@@ -154,3 +154,14 @@ package in this project family).
 - `locale/<lang-code>/` layout, `skill.json` inside each locale
   folder.
 - Present design changes for review before implementing.
+
+
+## "What is" needs a known term (Adapt, not Padatious)
+
+`what_is` was a Padatious template, `what is {term}`, and took every "what
+is …" question: "hvad er fotosyntese" got "I don't know a term called
+fotosyntese" and never reached Common Query (Wikipedia,
+ovos-skill-wiki-offline). It is now an Adapt intent that requires a word
+from `GeometryTerm.voc`, every name in `glossary_names.json` (written by
+`tools/make_vocab.py`, with the phrases in `WhatIs.voc`). "What is a
+rhombus" still matches.
