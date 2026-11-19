@@ -71,8 +71,9 @@ computation functions) for its quiz mode, the same relationship
   etc) - rhombus/pentagon/hexagon and every 3D shape have a glossary
   DEFINITION but no formula-application intent yet. `FORMULA_PROPERTIES`
   in `__init__.py` is the exact list.
-- **Numbers are parsed via `ovos-number-parser`**, handling both
-  digit strings ("5") and spoken number words ("five"), per language.
+- **Numbers are read with [numtag](https://github.com/TigreGotico/numtag)**:
+  digit strings in the language's own notation ("5", "3,5" in Danish),
+  spoken number words ("five", "deux et demi") and both together.
   Unparseable input speaks a generic "I didn't catch that number"
   rather than guessing.
 - **Irrational results are rounded to 2 decimals for speech** (`format_number()`)
