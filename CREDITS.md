@@ -25,7 +25,7 @@ DEVELOPMENT.md.
 
 ## License
 
-The skill's own code is GPL-3.0-or-later, see `LICENSE`. The
+The skill's own code is Apache-2.0, see `LICENSE`. The
 hand-authored glossary/definition/formula content in `data/` and
 `locale/` is original writing for this project, not a derivative of
 any external source, so no separate attribution is required for it.

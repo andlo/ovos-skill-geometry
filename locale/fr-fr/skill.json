@@ -3,7 +3,7 @@
   "source": "https://github.com/andlo/ovos-skill-geometry",
   "package_name": "ovos-skill-geometry",
   "pip_spec": "ovos-skill-geometry",
-  "license": "GPL-3.0-or-later",
+  "license": "Apache-2.0",
   "author": "andlo",
   "name": "Géométrie",
   "description": "Connaissances en géométrie - définitions des formes et termes, formules et calculs pour rectangles, carrés, triangles, cercles et le théorème de Pythagore. Entièrement hors ligne.",

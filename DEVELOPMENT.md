@@ -150,7 +150,7 @@ package in this project family).
 
 ## Style / conventions
 
-- License: GPL-3.0-or-later.
+- License: Apache-2.0.
 - `locale/<lang-code>/` layout, `skill.json` inside each locale
   folder.
 - Present design changes for review before implementing.

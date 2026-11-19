@@ -3,7 +3,7 @@
   "source": "https://github.com/andlo/ovos-skill-geometry",
   "package_name": "ovos-skill-geometry",
   "pip_spec": "ovos-skill-geometry",
-  "license": "GPL-3.0-or-later",
+  "license": "Apache-2.0",
   "author": "andlo",
   "name": "Geometrie",
   "description": "Geometrisches Wissen - Definitionen von Formen und Begriffen, Formeln und Berechnungen für Rechtecke, Quadrate, Dreiecke, Kreise und den Satz des Pythagoras. Vollständig offline.",

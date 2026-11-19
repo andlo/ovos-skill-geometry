@@ -3,7 +3,7 @@
   "source": "https://github.com/andlo/ovos-skill-geometry",
   "package_name": "ovos-skill-geometry",
   "pip_spec": "ovos-skill-geometry",
-  "license": "GPL-3.0-or-later",
+  "license": "Apache-2.0",
   "author": "andlo",
   "name": "Geometry",
   "description": "Geometry knowledge - shape and term definitions, formulas, and applied calculations for rectangles, squares, triangles, circles, and the Pythagorean theorem. Fully offline.",
