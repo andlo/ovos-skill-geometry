@@ -23,9 +23,10 @@ this package only computes and speaks facts, it never grades anything.
 
 import math
 import json
+from fractions import Fraction
 from pathlib import Path
 
-from ovos_number_parser import extract_number
+from numtag import Reason, UnsupportedLanguageError, tag_numbers
 from ovos_workshop.skills import OVOSSkill
 from ovos_workshop.decorators import intent_handler, common_query
 from ovos_workshop.intents import IntentBuilder
@@ -137,16 +138,23 @@ def formula_words(key, lang):
 
 
 def parse_number(raw, lang):
-    """Wraps ovos_number_parser.extract_number(), which returns False
-    (not None) on failure - normalized to None here so callers can
-    use a plain truthy/None check. Handles both digit strings ('5')
-    and spoken number words ('five', 'fem', 'cinco', ...)."""
+    """The number in a slot as a float, or None when there is none.
+
+    numtag reads digits in the language's own notation ('3,5' in
+    Danish and German, '3.5' in English), spoken numbers ('five',
+    'fem', 'deux et demi') and both together. A lone article ('en',
+    'un') is read as 1 only when the slot holds no other number. A
+    language numtag has no lexicon for reads no number."""
     if raw is None:
         return None
-    result = extract_number(str(raw), lang=lang)
-    if result is False:
+    try:
+        mentions = tag_numbers(str(raw), lang)
+    except UnsupportedLanguageError:
         return None
-    return float(result)
+    numbers = [m for m in mentions if Reason.ARTICLE not in m.reasons] or mentions
+    if not numbers:
+        return None
+    return float(Fraction(numbers[0].value))
 
 
 # ---------------------------------------------------------------
